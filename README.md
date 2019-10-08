@@ -93,7 +93,7 @@ $ `openssl req -new -x509 -days 365 -key ca.key -out ca.crt You are about to be 
     `ssl_client_certificate /nginx/conf/ssl/ca.crt;`  
     `ssl_verify_client optional;`  
     `...`  
-    `location /admin {}`  
+    `location /admin {if ($ssl_client_verify != SUCCESS) {return 401;}proxy_pass http://localhost:1001;}`    
 `}`  
 
 **完成**  
