@@ -1,7 +1,7 @@
 ## 一、通过net/http实现https双向验证
 
 `openss`相关资料链接：   
- openssl：`https://www.openssl.org/docs/`
+ `openssl`：`https://www.openssl.org/docs/`
 
 **通过openss生成CA证书、服务端、客户端的证书和私钥**   
 1、生成CA证书  
