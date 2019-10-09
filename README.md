@@ -28,7 +28,7 @@
 1、先基于Let’s Encrypt证书配置https单向校验的网站链接  
    `wget https://dl.eff.org/certbot-auto`  
    `chmod u+x certbot-auto`   
-   `./certbot-auto certonly --standalone -m abc@yubangweb.com --agree-tos -d abc.yubangweb.com`  
+   `./certbot-auto certonly --standalone -m *@search.cn --agree-tos -d *.search.cn`  
 2、修改nginx的配置  
 `server {`   
   `listen 80;`   
